@@ -2,6 +2,8 @@
 
 Made using NextJS, Typescript, Sanity Studio and Tailwind CSS.
 
+See the live site at [http://www.emilioguarino.com] (http://www.emilioguarino.com)
+
 ## Helpful quirks to know about for updating with new projects or modifiying
 
 In NextJS, using the `<Image />` component optimizes load time. Don't forget to whitelist URLs of remote images.
@@ -31,3 +33,17 @@ Log into Sanity and add the content to it's respective category and it will popu
 8. Pass data into component via props.
 
 9. Add Menu Item if necessary
+
+## Getting this to work
+
+you will need to setup and configure Sanity Studio locally, then deploy and paste your projectId into the sanity.json
+
+The contact form uses Nodemailer to send emails on the backend.
+
+I recommend configuring a dedicated email just for the form to use. If you are using gmail, just pasting in a username and password will not work, you need to configure the account correctly. See their docs for instructions on how to do this.
+
+## Deploying to Vercel
+
+If you fork this and decide to use it yourself and deploy on Vercel, you will need to substitute your base URL or the page will render out with a 500 internal error.
+
+First, deploy the app normally, then get your deployment URL from Vercel (you'll see the 500 error). On vercel.com under your project settings, go to Environment Variables, then you will need to paste in your base URL to get it to run.
