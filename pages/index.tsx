@@ -11,8 +11,7 @@ import Projects from "../components/Projects";
 import ContactMe from "../components/ContactMe";
 import Music from "../components/Music";
 import Video from "../components/Video";
-
-import { ScriptProps } from "next/script";
+// import { ScriptProps } from "next/script";
 import {
   PageInfo,
   Experience,
@@ -23,7 +22,6 @@ import {
   Video as VideoType,
 } from "../typings";
 import { fetchPageInfo } from "../utils/fetchPageInfo";
-
 import { fetchExperiences } from "../utils/fetchExperiences";
 import { fetchSkills } from "../utils/fetchSkills";
 import { fetchProjects } from "../utils/fetchProjects";
