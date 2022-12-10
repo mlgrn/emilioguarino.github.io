@@ -98,7 +98,7 @@ const Home = ({
 export default Home;
 
 // this calls the utils functions, which call the api endpoints, which get data from sanity
-export const getStaticProps: GetStaticProps<Props> = async () => {
+export const getServerSideProps: GetServerSideProps<Props> = async () => {
   const pageInfo: PageInfo = await fetchPageInfo();
   const experiences: Experience[] = await fetchExperiences();
   const skills: Skill[] = await fetchSkills();
@@ -117,6 +117,5 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       music,
       video,
     },
-    revalidate: 1,
   };
 };
