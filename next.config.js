@@ -8,5 +8,5 @@ module.exports = {
   images: {
     domains: ["cdn.sanity.io"],
   },
-  //nextConfig
+  nextConfig,
 };

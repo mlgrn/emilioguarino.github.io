@@ -23,6 +23,7 @@ import {
   Video as VideoType,
 } from "../typings";
 import { fetchPageInfo } from "../utils/fetchPageInfo";
+
 import { fetchExperiences } from "../utils/fetchExperiences";
 import { fetchSkills } from "../utils/fetchSkills";
 import { fetchProjects } from "../utils/fetchProjects";
