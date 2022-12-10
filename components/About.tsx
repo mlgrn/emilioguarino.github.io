@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import EmilioTri from "../images/HotWobble-2.jpg";
 import { PageInfo } from "../typings";
-import { urlFor } from "../pages/sanity";
+import { urlFor } from "../sanity";
 // portfolio-2/images/HotWobble-2.jpg
 
 type Props = {

@@ -1,7 +1,7 @@
 import React from "react";
 import { Video as VideoType } from "../typings";
 import { motion } from "framer-motion";
-import { urlFor } from "../pages/sanity";
+import { urlFor } from "../sanity";
 // import ReactPlayer from "react-player";
 import dynamic from "next/dynamic";
 import Vimeo from "@u-wave/react-vimeo";

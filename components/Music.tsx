@@ -1,7 +1,7 @@
 import React from "react";
 import { Music as MusicType } from "../typings";
 import { motion } from "framer-motion";
-import { urlFor } from "../pages/sanity";
+import { urlFor } from "../sanity";
 // import ReactPlayer from "react-player";
 import dynamic from "next/dynamic";
 

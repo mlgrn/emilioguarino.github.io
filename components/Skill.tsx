@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Skill as SkillType } from "../typings";
-import { urlFor } from "../pages/sanity";
+import { urlFor } from "../sanity";
 
 type Props = {
   skill: SkillType;

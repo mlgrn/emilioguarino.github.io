@@ -4,7 +4,7 @@ import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
 import Link from "next/link";
 import { PageInfo } from "../typings";
-import { urlFor } from "../pages/sanity";
+import { urlFor } from "../sanity";
 
 type Props = {
   pageInfo: PageInfo;
@@ -59,6 +59,10 @@ function Hero({ pageInfo }: Props) {
           </Link>
           <Link href="#music">
             <button className="heroButton">Music</button>
+          </Link>
+
+          <Link href="#video">
+            <button className="heroButton">Video</button>
           </Link>
         </div>
       </div>

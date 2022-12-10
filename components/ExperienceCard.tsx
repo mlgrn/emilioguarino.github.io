@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Experience } from "../typings";
-import { urlFor } from "../pages/sanity";
+import { urlFor } from "../sanity";
 
 type Props = {
   experience: Experience;
@@ -50,10 +50,12 @@ function ExperienceCard({ experience }: Props) {
         {/* tech icons */}
         <div className="flex flex-wrap my-2 pl-20 md:text-2xl md:pl-0">
           {experience.technologies.map((technology) => (
-            <img
+            <Image
               key={technology._id}
-              className="h-10 w-10 rounded-full p-1"
               src={urlFor(technology.image).url()}
+              alt="technology icon"
+              height="40px"
+              width="40px"
             />
           ))}
         </div>
